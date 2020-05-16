@@ -1,0 +1,89 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100vh;
+    background-color: rgb(216, 216, 216);
+
+    .head {
+        height: 150px;
+        background-color: rgb(255, 206, 255);
+        .nav-top {
+
+            ul {
+                list-style-type: none;
+                float: right;
+                margin-right: 165px;
+                margin-top: 66px;
+                
+                li {
+                    box-sizing: border-box;
+                    padding-top: 8px;
+                    float: left;
+                    margin-left: 30px;
+                    width: 70px;
+                    text-align: center;
+
+                    &:first-child{
+                        border-top: 2px solid #ff0000;
+                    }
+                    a {
+                        width: 70px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+      
+                }
+            }
+        }
+        .logo {
+            float: left;
+            margin-top: 50px;
+            margin-left: 165px;
+    
+        }
+    }
+    .head-cnt{
+        width: 385px;
+        margin-left:165px;
+        margin-top: 215px;
+
+        h1{
+            font-size: 45px;
+        }
+        p{
+            font-size: 16px;
+            margin-top: 15px;
+            line-height: 1.5;
+        }
+        button{
+            text-transform: uppercase;
+            background-color: #ff6033;
+            border: transparent;
+            height: 60px;
+            width: 200px;
+            margin-top:30px;
+            color: #ffffff;
+            font-size: 18px;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+            transition: all 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #fa3802;
+            }
+        }
+        
+    }
+
+
+}
