@@ -5,11 +5,19 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1500px;
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 header {
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  height: 1000px;
   background-image: url(img/strawberry-background.jpg);
   background-size: cover;
 }
@@ -102,11 +110,41 @@ header .little-mouse {
   justify-content: center;
 }
 
-main #about-us {
-  background-color: #00c4c4;
+header .little-mouse .mouse {
+  position: relative;
+  bottom: -270px;
 }
 
-main #about-us img {
+main #about-us {
+  background-color: #00c4c4;
+  display: flex;
+  flex-flow: collumn wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main #about-us .img-malina img {
   margin: 80px 180px 100px 80px;
   clear: both;
+}
+
+main #about-us .about-cnt {
+  width: 500px;
+  color: #ffffff;
+  margin-top: 0;
+  padding-top: 0;
+  margin-right: 200px;
+}
+
+main #about-us .about-cnt p {
+  line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+  main #about-us .img-malina {
+    width: 100%;
+  }
+  main #about-us .about-cnt {
+    width: 100%;
+  }
 }

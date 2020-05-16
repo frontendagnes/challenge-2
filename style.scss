@@ -5,15 +5,25 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1500px;
+}
+
+h2 {
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 header {
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    height: 1000px;
     background-image: url(img/strawberry-background.jpg);
     background-size: cover;
+
     .head {
         height: 150px;
+
         .nav-top {
 
             ul {
@@ -21,7 +31,7 @@ header {
                 float: right;
                 margin-right: 165px;
                 margin-top: 66px;
-                
+
                 li {
                     box-sizing: border-box;
                     padding-top: 8px;
@@ -32,12 +42,14 @@ header {
                     transition: border .5s linear;
                     border-top: 3px solid transparent;
 
-                    &:first-child{
+                    &:first-child {
                         border-top: 3px solid #ff0000;
                     }
-                    &:hover{
+
+                    &:hover {
                         border-top: 3px solid #ff0000;
                     }
+
                     a {
                         display: inline-block;
                         width: 70px;
@@ -46,71 +58,112 @@ header {
                         color: #000000;
                         font-weight: 600;
                     }
-      
+
                 }
             }
         }
+
         .logo {
             float: left;
             margin-top: 50px;
             margin-left: 165px;
-    
+
         }
     }
-    .head-cnt{
+
+    .head-cnt {
         width: 385px;
-        margin-left:165px;
+        margin-left: 165px;
         margin-top: 215px;
 
-        h1{
+        h1 {
             font-size: 45px;
             font-weight: 800;
         }
-        p{
+
+        p {
             font-size: 16px;
             margin-top: 15px;
             line-height: 1.5;
             color: #262626;
         }
-        button{
+
+        button {
             text-transform: uppercase;
             background-color: #ff6033;
             border: transparent;
             height: 60px;
             width: 200px;
-            margin-top:30px;
+            margin-top: 30px;
             color: #ffffff;
             font-size: 18px;
-            -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
-            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+            // margin-bottom: 400px;
+            -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
             transition: all 0.5s;
             cursor: pointer;
-            
-            &:hover{
+
+            &:hover {
                 background-color: #fa3802;
             }
-        }    
+        }
     }
-    .little-mouse{   
+
+    .little-mouse {
         display: flex;
         justify-content: center;
-        
+        .mouse{
+            position: relative;
+            bottom: -270px;
+        }
     }
 }
 
-main{
-    #about-us{
+main {
+    #about-us {
         background-color: #00c4c4;
-        
-        img{
-            // margin: bottom left right top;
-            margin: 80px 180px 100px 80px;
-            clear: both;
+        display: flex;
+        flex-flow: collumn wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        .img-malina {
+
+            img {
+                // margin: bottom left right top;
+                margin: 80px 180px 100px 80px;
+                clear: both;
+            }
         }
 
-        .about-cnt{
-           
+        .about-cnt {
+            width: 500px;
+            color: #ffffff;
+            margin-top: 0;
+            padding-top: 0;
+            margin-right: 200px;
+
+            p {
+                line-height: 1.5;
+            }
         }
     }
+}
+
+@media (max-width: 800px) {
+    main {
+        #about-us {
+            .img-malina {
+                width: 100%;
+            }
+
+            .about-cnt {
+                width: 100%;
+            }
+
+        }
+    }
+
+
 }
