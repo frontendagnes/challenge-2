@@ -32,7 +32,7 @@ header .head .nav-top ul li {
   margin-left: 30px;
   width: 70px;
   text-align: center;
-  transition: border .5s ease-in-out;
+  transition: border .5s linear;
   border-top: 3px solid transparent;
 }
 
@@ -95,4 +95,18 @@ header .head-cnt button {
 
 header .head-cnt button:hover {
   background-color: #fa3802;
+}
+
+header .little-mouse {
+  display: flex;
+  justify-content: center;
+}
+
+main #about-us {
+  background-color: #00c4c4;
+}
+
+main #about-us img {
+  margin: 80px 180px 100px 80px;
+  clear: both;
 }
