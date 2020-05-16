@@ -9,11 +9,11 @@ body {
 
 header {
     height: 100vh;
-    background-color: rgb(216, 216, 216);
-
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/strawberry-background.jpg);
+    background-size: cover;
     .head {
         height: 150px;
-        background-color: rgb(255, 206, 255);
         .nav-top {
 
             ul {
@@ -29,15 +29,22 @@ header {
                     margin-left: 30px;
                     width: 70px;
                     text-align: center;
+                    transition: border .5s ease-in-out;
+                    border-top: 3px solid transparent;
 
                     &:first-child{
-                        border-top: 2px solid #ff0000;
+                        border-top: 3px solid #ff0000;
+                    }
+                    &:hover{
+                        border-top: 3px solid #ff0000;
                     }
                     a {
+                        display: inline-block;
                         width: 70px;
                         text-decoration: none;
                         text-transform: uppercase;
                         color: #000000;
+                        font-weight: 600;
                     }
       
                 }
@@ -57,11 +64,13 @@ header {
 
         h1{
             font-size: 45px;
+            font-weight: 800;
         }
         p{
             font-size: 16px;
             margin-top: 15px;
             line-height: 1.5;
+            color: #262626;
         }
         button{
             text-transform: uppercase;
@@ -77,7 +86,7 @@ header {
             box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
             transition: all 0.5s;
             cursor: pointer;
-
+            
             &:hover{
                 background-color: #fa3802;
             }
