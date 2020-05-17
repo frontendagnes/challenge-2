@@ -216,6 +216,92 @@ main #our-service .wrap-cnt img {
   margin-top: 100px;
 }
 
+main #gallery {
+  background-color: #ffe92f;
+}
+
+main #gallery .gallery-cnt h2 {
+  color: #262626;
+  margin-top: 0;
+  padding-top: 100px;
+  text-align: center;
+}
+
+main #gallery .gallery-cnt p {
+  max-width: 570px;
+  line-height: 1.5;
+  color: #262626;
+  margin: 30px auto;
+  text-align: center;
+}
+
+main #gallery .gallery-img {
+  display: grid;
+  grid-template-columns: repeat(21, 75px);
+  grid-template-rows: repeat(15, 75px);
+}
+
+main #gallery .gallery-img img {
+  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+main #gallery .gallery-img .img1 {
+  grid-column: 2/13;
+  grid-row: 1/8;
+  height: 560px;
+}
+
+main #gallery .gallery-img .img2 {
+  grid-column: 14/21;
+  grid-row: 1/8;
+}
+
+main #gallery .gallery-img .img3 {
+  grid-column: 14/21;
+  grid-row: 5/8;
+  align-self: start;
+  height: 260px;
+  width: 404px;
+}
+
+main #gallery .gallery-img .img4 {
+  grid-column: 2/10;
+  grid-row: 9/14;
+}
+
+main #gallery .gallery-img .img5 {
+  z-index: 1;
+  grid-column: 11/21;
+  grid-row: 9/14;
+}
+
+main #gallery .gallery-btn {
+  text-align: center;
+  padding-bottom: 118px;
+  background-color: #ffe92f;
+}
+
+main #gallery .gallery-btn button {
+  text-transform: uppercase;
+  width: 200px;
+  height: 60px;
+  background-color: #5585a2;
+  color: #ffffff;
+  border: transparent;
+  transition: all .5s ease-out;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+}
+
+main #gallery .gallery-btn button:hover {
+  background-color: #2c719c;
+}
+
 @media (max-width: 800px) {
   main #about-us .img-malina {
     width: 100%;
