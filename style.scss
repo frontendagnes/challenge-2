@@ -18,13 +18,13 @@ h2 {
 }
 
 header {
-    height: 1000px;
+    min-height: 100vh;
     background-color: #f9f8fb;
     background-image: url(img/strawberry-background.jpg);
-
+    background-size: cover;
+  
     .head {
         height: 150px;
-
         .nav-top {
 
             ul {
@@ -83,6 +83,8 @@ header {
             }
         }
 
+        
+        
         .logo {
             float: left;
             margin-top: 50px;
@@ -90,6 +92,26 @@ header {
 
         }
     }
+
+    .navbar-fixed-top{
+        position: fixed;
+        top:0;
+        height: 70px;
+        width: 100%;
+        background-color: #ffffff;  
+        z-index: 2;
+        .nav-top {
+                
+            ul {
+                margin-top: 10px;
+            }
+        }
+        .logo {
+            margin-top: 10px;
+            margin-left: 65px;
+        }
+    }
+
 
     .head-cnt {
         width: 385px;
@@ -134,7 +156,7 @@ header {
         justify-content: center;
         .mouse{
             position: relative;
-            bottom: -270px;
+            bottom: -70px;
         }
     }
 }
@@ -303,26 +325,67 @@ main {
         }
     }
     #subscribe-form{
+        background-color: #ff6033;
+        background-image: url("/img/subscribe-bg.jpg");
+        height: 500px;
+        .subscribe-cnt{
+          padding-top:140px;
+            h3{
+                margin-left:165px;
+                font-size: 40px;
+                margin-bottom: 0;
+                padding-bottom: 20px;
 
-    }
-    #blog{
-
-    }
-}
-
-@media (max-width: 800px) {
-    main {
-        #about-us {
-            .img-malina {
-                width: 100%;
             }
-
-            .about-cnt {
-                width: 100%;
+            p{
+               width:570px;
+               margin-left:165px;
+               padding-top:0;
+               margin-top:0;
+               margin-left:165px;
+               padding-bottom:0;
+               margin-bottom:0;
+               line-height: 1.5;
+               color: #262626; 
             }
-
+        }
+        form{
+            display: flex;
+            flex-flow: row wrap;
+             margin-top: 0; 
+             padding-top: 0;        
+            #email-form{
+                box-sizing: border-box;
+                width:570px;
+                height: 50px;
+                border-color: #262626;
+                margin-left:165px;
+                padding-left:15px;
+                margin-top:40px;
+            }
+            .btn-form{
+                text-transform: uppercase;
+                width: 170px;
+                height: 50px;
+                color: #ffffff;
+                background-color: #96b92c;
+                border:transparent;
+                margin-left: 30px;
+                align-self: flex-end;
+                font-size: 18px;
+                -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+                transition: all .5s ease-out;
+                cursor: pointeraqq;
+                &:hover{
+                    background-color: #7a9722;
+                }
         }
     }
 
+    // #blog{
 
+    // }
+}
 }
