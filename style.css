@@ -6,7 +6,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  width: 1500px;
 }
 
 h2 {
@@ -32,7 +31,7 @@ header .head .nav-top ul {
   list-style-type: none;
   float: right;
   margin-right: 165px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 header .head .nav-top ul li {
@@ -43,35 +42,6 @@ header .head .nav-top ul li {
   text-align: center;
 }
 
-header .head .nav-top ul li::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #ff6033;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  transition: all .5s linear;
-  visibility: hidden;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-}
-
-header .head .nav-top ul li:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-header .head .nav-top ul li:first-child::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: #ff6033;
-  visibility: visible;
-  transform: scaleX(1);
-}
-
 header .head .nav-top ul li a {
   display: inline-block;
   width: 100%;
@@ -79,6 +49,23 @@ header .head .nav-top ul li a {
   text-transform: uppercase;
   color: #000000;
   font-weight: 600;
+}
+
+header .head .nav-top ul li hr {
+  height: 3px;
+  background-color: #ff6033;
+  border: transparent;
+  transition: all .5s linear;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+header .head .nav-top ul .li-scroll:hover hr,
+header .head .nav-top ul .li-hr {
+  visibility: visible;
+  transform: scaleX(1);
+  color: red;
 }
 
 header .head .logo {
@@ -102,7 +89,6 @@ header .navbar-fixed-top .nav-top ul {
 
 header .navbar-fixed-top .logo {
   margin-top: 10px;
-  margin-left: 65px;
 }
 
 header .head-cnt {
