@@ -16,6 +16,15 @@ h2 {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+button{
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: transparent;
+}
 
 header {
     min-height: 100vh;
@@ -126,19 +135,12 @@ header {
         }
 
         button {
-            text-transform: uppercase;
             background-color: #ff6033;
-            border: transparent;
             height: 60px;
             width: 200px;
             margin-top: 30px;
             color: #ffffff;
             font-size: 18px;
-            -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-            -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-            box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-            transition: all 0.5s;
-            cursor: pointer;
 
             &:hover {
                 background-color: #fa3802;
@@ -302,17 +304,10 @@ main {
             padding-bottom: 118px;
             background-color: #ffe92f;
             button{
-                text-transform: uppercase;
                 width:200px;
                 height: 60px;
                 background-color: #5585a2;
                 color:#ffffff;
-                border: transparent;
-                transition: all .5s ease-out;
-                cursor: pointer;
-                -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-                box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
                 font-size: 18px;
                 &:hover{
                     background-color: #2c719c ;
@@ -487,14 +482,11 @@ main {
         padding-bottom: 120px;
         button{
             background-color: #f72b3b;
-            border: transparent;
             width: 200px;
             height: 57px;
             color: #ffffff;
             font-size: 18px;
-            transition: all .5s;
-            text-transform: uppercase;
-            cursor: pointer;
+        
             &:hover{
                 background-color: #bd0111;
             }
@@ -504,4 +496,92 @@ main {
 
     }   
 
+}
+
+footer{
+    background-image: url("img/contact-bg.jpg");
+    margin-top:-60px;
+    padding-top: 0;
+    height: 956px;
+    .footer-cnt{
+        h2{
+            padding-top:100px;
+            color: #000000;
+            text-align: center;
+        }
+
+        p{
+            max-width: 370px;
+            margin: 0 auto;
+            line-height: 1.5;
+            margin-top:45px;
+        }
+    }
+    .footer-contact{
+        margin-left:167px;
+        margin-top:50px;
+        display: flex;
+        justify-content: space-between;
+       
+            input, textarea{
+                box-sizing: border-box;
+                margin-top: 15px;
+                width: 500px;
+                height: 50px;
+                background-color: rgba(0, 196, 196, 0.5);
+                border: none;
+                padding-left: 18px;
+                transition: all .5s;
+                &::placeholder{
+                    color:#ffffff;
+                    font-size: 18px;
+                }
+                &:focus{
+                    background-color: rgba(0, 131, 131, 0.5);
+                    border-left: 6px solid #355b82;
+                }
+            }
+            textarea{
+                height: 250px;
+                padding-top: 15px;
+            }
+            .msg-btn{
+                text-align: center;
+                button{
+                    height: 50px;
+                    width: 50%;
+                    color: #ffffff;
+                    background-color: rgba(0, 196, 196, 1);
+                    font-size: 18px;
+                    letter-spacing: 2px;
+                    margin-top:15px;
+                    margin-bottom: 120px;
+                    &:hover{
+                        background-color: rgba(0, 131, 131, 1);
+                    }
+                }
+            }
+   
+        .adress{
+            font-size:15px;
+            margin-right: 335px;
+            .head-adress{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+    .footer-end{
+        margin-top: -50px;
+        padding-top: 0;
+        height: 90px;
+        background-color: #353b48;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #ffffff;
+        span{
+            color: #ff0000;
+        }
+    }
 }
