@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    width: 1500px;
+    // width: 1500px;
 }
 
 h2 {
@@ -24,6 +24,7 @@ button{
     cursor: pointer;
     text-transform: uppercase;
     border: transparent;
+    letter-spacing: 2px;
 }
 
 header {
@@ -38,16 +39,15 @@ header {
         .nav-top {
             display: flex;
             flex-flow: row wrap;
+            justify-content: space-around;
             .div-logo{
                 margin-top: 50px;
-                margin-left: 165px;
-                margin-right: 470px; 
+                // margin-left: 165px;
+                // margin-right: 470px; 
             }
             ul {
                 list-style-type: none;
-                // width: 50%;
                 margin-top: 50px;
-                // margin-right: 165px;
                 li {
                     box-sizing: border-box;
                     padding-top: 8px;
@@ -110,7 +110,6 @@ header {
                 margin-top: 5px;
                 margin-right: 50px;
                 transition: all .5s linear;
-                // margin-right: 100px;
             }
         }
     
@@ -161,9 +160,6 @@ header {
 main {
     #about-us {
         background-color: #00c4c4;
-        // background-image: url("img/maliny.png");
-        // background-repeat: no-repeat;
-        // background-position: ;
         display: flex;
         flex-flow: collumn wrap;
         justify-content: space-around;
@@ -415,7 +411,6 @@ main {
             cursor: pointer;
             background-position: center center;
             background-size: cover;
-            // transition-duration: .7;
             &:hover{
                 transform: scale(1.2);
             }
@@ -465,7 +460,6 @@ main {
            }
 
         .img-1{
-            // background-image: url("img/blog/blog1.jpg");
             background:linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%), url('img/blog/blog1.jpg');
         }
         .img-2{

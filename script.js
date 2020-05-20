@@ -26,19 +26,19 @@ function activeMenu() {
     const contact = $("#contact").offset().top;
 
     // sprawdzam czy pozycja scroll osiągneła pozycje danego article i w zalezności dodaje lub usuwam klasę z aniamcją
-    if (scroll < aboutUs) {
+    if (scroll < aboutUs -150) {
         $("nav li hr").not(".hr1").removeClass("li-hr");
         $(".hr1").addClass("li-hr");
-    } else if (scroll < ourService) {
+    } else if (scroll < ourService - 150) {
         $("nav li hr").not(".hr2").removeClass("li-hr");
         $(".hr2").addClass("li-hr");
-    } else if (scroll < gallery){
+    } else if (scroll < gallery - 150){
         $("nav li hr").not(".hr3").removeClass("li-hr");
         $(".hr3").addClass("li-hr");
-    } else if (scroll < blog){
+    } else if (scroll < blog - 150){
         $("nav li hr").not(".hr4").removeClass("li-hr");
         $(".hr4").addClass("li-hr");
-    }  else if (scroll < contact){
+    }  else if (scroll < contact - 150){
         $("nav li hr").not(".hr5").removeClass("li-hr");
         $(".hr5").addClass("li-hr");
     }  
