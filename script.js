@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    //#region  przyklejenie menu  
+//#region  przyklejenie menu  
     let head = document.querySelector(".head");
     function scroll() {
-        if (window.scrollY > 5) {
+        if (window.scrollY > 150) {
             head.classList.add("navbar-fixed-top")
         } else
             head.classList.remove("navbar-fixed-top")
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener("scroll", scroll);
 
-})
+
 //#endregion
 
 // #region JQuery animacja menu podczas przewijania
@@ -38,7 +38,7 @@ function activeMenu() {
     } else if (scroll < blog){
         $("nav li hr").not(".hr4").removeClass("li-hr");
         $(".hr4").addClass("li-hr");
-    }  else if (scroll < blog){
+    }  else if (scroll < contact){
         $("nav li hr").not(".hr5").removeClass("li-hr");
         $(".hr5").addClass("li-hr");
     }  
@@ -51,3 +51,5 @@ function activeMenu() {
 $(window).on("scroll", activeMenu);
 
 //#endregion
+
+})
