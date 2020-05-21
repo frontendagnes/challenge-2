@@ -6,19 +6,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    // box-sizing: border-box;
     // width: 1500px;
 }
 
 h2 {
     color: white;
-    font-size: 70px;
-    font-weight: 600;
-    margin-bottom: 0;
+    font-size: 70px !important;
+    font-weight: 600 !important;
+    margin-bottom: 0 !important;
     padding-bottom: 0;
 }
 button{
-    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
     transition: all 0.5s;
     cursor: pointer;
@@ -28,7 +27,7 @@ button{
 }
 
 header {
-    min-height: 100vh;
+    // min-height: 100vh;
     background-color: #f9f8fb;
     background-image: url(img/strawberry-background.jpg);
     background-size: cover; 
@@ -68,6 +67,8 @@ header {
                     hr{
                         height: 3px;
                         background-color: #ff6033;
+                        margin-bottom: 5px;
+                        padding-bottom: 0x;
                         border:transparent;
                         transition: all .5s linear;
                         visibility: hidden;
@@ -77,7 +78,7 @@ header {
 
                 }
 
-                .li-scroll:hover hr,
+                li:hover hr,
                 .li-hr{
                     visibility: visible;
                     transform: scaleX(1);
@@ -97,8 +98,6 @@ header {
         background-color: #f9f8fb;  
         z-index: 2;
         transition: all .5s linear;
-        -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
         box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
         .nav-top {             
             ul {
@@ -140,7 +139,7 @@ header {
             margin-top: 30px;
             color: #ffffff;
             font-size: 18px;
-
+            margin-bottom: 400px;
             &:hover {
                 background-color: #fa3802;
             }
@@ -152,7 +151,7 @@ header {
         justify-content: center;
         .mouse{
             position: relative;
-            bottom: -70px;
+            bottom: 70px;
         }
     }
 }
@@ -160,38 +159,37 @@ header {
 main {
     #about-us {
         background-color: #00c4c4;
+        background-image: url("img/maliny.png");
+        background-repeat: no-repeat;
+        background-position: left 180px top 80px;
         display: flex;
-        flex-flow: collumn wrap;
-        justify-content: space-around;
-        align-items: center;
-
-        .img-malina {
-            // margin: bottom left right top;
-            img {
-                margin: 80px 180px 100px 80px;
-            }
-        }
-
         .about-cnt {
             width: 500px;
             color: #ffffff;
-            margin-top: 0;
+            margin-top: 175px;
             padding-top: 0;
-            margin-right: 156px;
+            margin-left: 60%;
+            text-shadow: 2px 2px 4px #000;
+            margin-bottom: 235px;
 
             p {
                 line-height: 1.5;
+
             }
         }
     }
 
     #our-service{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         background-color: #70bfff;
+        background-image: url("img/tomatoes.png");
+        background-repeat: no-repeat;
+        background-position: right 165px top 100px;
         .wrap-btn{
              // margin: bottom left right top;
-            margin: 180px 265px 0 120px;
+            margin-top: 120px;
             margin-bottom: 150px;
 
             cursor: pointer;
@@ -205,8 +203,6 @@ main {
                 height: 100px;
                 text-align: center;
                 transition: all .5s ease-in;
-                -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
                 box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
                 .btn-txt{
                     width: 300px;
@@ -225,20 +221,12 @@ main {
     
         }
 
-        .wrap-cnt{
-            position: relative;
-            h2{
+           h2{
                 position: absolute;
-                top:270px;
-                z-index: 1;              
+                position: relative;
+                top:270px; 
+                margin-right: 165px;        
             }
-            img{
-                // margin: bottom left right top;
-                margin-right: 165px;
-                margin-top: 100px;
-                
-            }
-        }
     }
     #gallery{
         background-color: #ffe92f;
@@ -258,47 +246,49 @@ main {
             }
         }
         .gallery-img{
-            display: grid;
-            grid-template-columns: repeat(21, 75px);
-            grid-template-rows: repeat(15, 75px);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+            // display: grid;
+            // grid-template-columns: repeat(21, 1fr);
+            // grid-template-rows: repeat(15, 1fr);
             img{
-                -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
                 box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+                height: auto;
+                margin-top: 30px;
             }
             .img1{
-                
-                grid-column: 2/13;
-                grid-row: 1/8;
-                height: 560px;
+                  width: 50% ; 
+                  
+                // grid-column: 2/13;
+                // grid-row: 1/8;
+                // height: 560px;
 
             }
-            .img2{
-                grid-column: 14/21;
-                grid-row: 1/8;
-            }
-            .img3{
-                grid-column: 14/21;
-                grid-row: 5/8;
-                align-self: start;
-                height: 260px;
-                width:404px;
-            }
+            .gallery-img-2{
+                display: flex;
+                flex-flow: column wrap;
+        }
+        .gallery-img-3{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
             .img4{
-                grid-column: 2/10;
-                grid-row: 9/14;
-
+                width: 40%;
             }
             .img5{
-                z-index:1;
-                grid-column: 11/21;
-                grid-row: 9/14;
+               
+               width:40%
             }
+        }
         }
         .gallery-btn{
             text-align: center;
             padding-bottom: 118px;
             background-color: #ffe92f;
+            margin-top: 50px;
             button{
                 width:200px;
                 height: 60px;
@@ -314,6 +304,7 @@ main {
     #subscribe-form{
         background-color: #ff6033;
         background-image: url("/img/subscribe-bg.jpg");
+        background-size: cover;
         height: 500px;
         .subscribe-cnt{
           padding-top:140px;
@@ -340,16 +331,20 @@ main {
             display: flex;
             flex-flow: row wrap;
              margin-top: 0; 
-             padding-top: 0;        
+             padding-top: 0;  
+             
+            .form-div{  
+                width: 45%;     
             #email-form{
                 box-sizing: border-box;
-                width:570px;
+                width:100%;
                 height: 50px;
                 border-color: #262626;
                 margin-left:165px;
                 padding-left:15px;
                 margin-top:40px;
             }
+        }
             .btn-form{
                 text-transform: uppercase;
                 width: 170px;
@@ -357,11 +352,9 @@ main {
                 color: #ffffff;
                 background-color: #96b92c;
                 border:transparent;
-                margin-left: 30px;
+                margin-left: 200px;
                 align-self: flex-end;
                 font-size: 18px;
-                -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
                 box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
                 transition: all .5s ease-out;
                 cursor: pointeraqq;
@@ -397,9 +390,6 @@ main {
         .img-1,
         .img-2,
         .img-3{
-
-            -webkit-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-            -moz-box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
             box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
             width: 370px;
             height: 328px;
@@ -496,7 +486,7 @@ footer{
     background-image: url("img/contact-bg.jpg");
     margin-top:-60px;
     padding-top: 0;
-    height: 956px;
+    // min-height: 100vh;
     .footer-cnt{
         h2{
             padding-top:100px;
@@ -515,22 +505,42 @@ footer{
         margin-left:167px;
         margin-top:50px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
        
+      form{
+          width: 40%;
             input, textarea{
                 box-sizing: border-box;
                 margin-top: 15px;
-                width: 500px;
+                width: 100%;
                 height: 50px;
                 background-color: rgba(0, 196, 196, 0.5);
                 border: none;
                 padding-left: 18px;
                 transition: all .5s;
+                &::-webkit-input-placeholder{
+                    color:#ffffff;
+                    font-size: 18px;
+                }
+                &::-moz-placeholder{
+                    color:#ffffff;
+                    font-size: 18px;
+                }
+                &:-ms-input-placeholder{
+                    color:#ffffff;
+                    font-size: 18px;
+                }
+                &::-ms-input-placeholder{
+                    color:#ffffff;
+                    font-size: 18px;
+                }
                 &::placeholder{
                     color:#ffffff;
                     font-size: 18px;
                 }
-                &:focus{
+                &:focus,
+                .active-inp{
                     background-color: rgba(0, 131, 131, 0.5);
                     border-left: 6px solid #355b82;
                 }
@@ -543,7 +553,7 @@ footer{
                 text-align: center;
                 button{
                     height: 50px;
-                    width: 50%;
+                    width: 200px;
                     color: #ffffff;
                     background-color: rgba(0, 196, 196, 1);
                     font-size: 18px;
@@ -555,7 +565,7 @@ footer{
                     }
                 }
             }
-   
+        }
         .adress{
             font-size:15px;
             margin-right: 335px;
@@ -568,7 +578,7 @@ footer{
     .footer-end{
         margin-top: -50px;
         padding-top: 0;
-        height: 90px;
+        min-height:10vh;
         background-color: #353b48;
         display: flex;
         justify-content: space-around;
@@ -576,6 +586,98 @@ footer{
         color: #ffffff;
         span{
             color: #ff0000;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .head-cnt,
+    .about-cnt,
+    .gallery-cnt p,
+    .subscribe-cnt p,
+    .blog-cnt p{
+        width:80%;
+        height: 100%;
+        text-align: center;
+    }
+main{
+    #about-us{
+        justify-content: center;
+    .about-cnt{
+        margin-left:10%;
+    }
+}
+    #our-service{
+        .wrap-btn{
+            margin-bottom: 0;
+        }
+        h2{
+            top:0;
+            left: 10%;
+
+        }
+
+    }
+    #subscribe-form{
+        .subscribe-cnt{
+            h3{
+                margin-left: 0;
+                text-align: center;
+            }
+            p{
+                width: 100%;
+                margin-left:0;
+            }
+        }
+        form{
+         
+                .btn-form{
+                    margin-top:10px;
+                }
+  
+        }
+    }
+}
+
+    footer{
+        .footer-contact{
+            margin: 0;
+        .adress{
+            margin-bottom: 50px;
+        }
+        form{
+            max-width: 100%;
+            margin: 0 auto;
+        .msg-btn{
+            button{
+                margin-bottom: 20px;
+            }
+        }
+    }}
+
+    .footer-end{
+        
+        padding-bottom: 0;
+    }
+    }
+
+
+}
+
+@media only screen and (max-width: 500px){
+
+    header{
+        
+        .head-cnt{
+            width: 90%;
+            margin-left:10px;
+            button{
+                margin-bottom: 20%;
+            }
+        }
+        .little-mouse{
+            display: none;
         }
     }
 }

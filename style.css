@@ -10,15 +10,13 @@ body {
 
 h2 {
   color: white;
-  font-size: 70px;
-  font-weight: 600;
-  margin-bottom: 0;
+  font-size: 70px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0 !important;
   padding-bottom: 0;
 }
 
 button {
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   transition: all 0.5s;
   cursor: pointer;
@@ -28,7 +26,6 @@ button {
 }
 
 header {
-  min-height: 100vh;
   background-color: #f9f8fb;
   background-image: url(img/strawberry-background.jpg);
   background-size: cover;
@@ -74,6 +71,8 @@ header .head .nav-top ul li a {
 header .head .nav-top ul li hr {
   height: 3px;
   background-color: #ff6033;
+  margin-bottom: 5px;
+  padding-bottom: 0x;
   border: transparent;
   transition: all .5s linear;
   visibility: hidden;
@@ -81,7 +80,7 @@ header .head .nav-top ul li hr {
   transform-origin: 0 50%;
 }
 
-header .head .nav-top ul .li-scroll:hover hr,
+header .head .nav-top ul li:hover hr,
 header .head .nav-top ul .li-hr {
   visibility: visible;
   transform: scaleX(1);
@@ -96,8 +95,6 @@ header .navbar-fixed-top {
   background-color: #f9f8fb;
   z-index: 2;
   transition: all .5s linear;
-  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -137,6 +134,7 @@ header .head-cnt button {
   margin-top: 30px;
   color: #ffffff;
   font-size: 18px;
+  margin-bottom: 400px;
 }
 
 header .head-cnt button:hover {
@@ -150,27 +148,25 @@ header .little-mouse {
 
 header .little-mouse .mouse {
   position: relative;
-  bottom: -70px;
+  bottom: 70px;
 }
 
 main #about-us {
   background-color: #00c4c4;
+  background-image: url("img/maliny.png");
+  background-repeat: no-repeat;
+  background-position: left 180px top 80px;
   display: flex;
-  flex-flow: collumn wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-main #about-us .img-malina img {
-  margin: 80px 180px 100px 80px;
 }
 
 main #about-us .about-cnt {
   width: 500px;
   color: #ffffff;
-  margin-top: 0;
+  margin-top: 175px;
   padding-top: 0;
-  margin-right: 156px;
+  margin-left: 60%;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 235px;
 }
 
 main #about-us .about-cnt p {
@@ -179,12 +175,16 @@ main #about-us .about-cnt p {
 
 main #our-service {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: #70bfff;
+  background-image: url("img/tomatoes.png");
+  background-repeat: no-repeat;
+  background-position: right 165px top 100px;
 }
 
 main #our-service .wrap-btn {
-  margin: 180px 265px 0 120px;
+  margin-top: 120px;
   margin-bottom: 150px;
   cursor: pointer;
 }
@@ -199,8 +199,6 @@ main #our-service .wrap-btn .btn-cell {
   height: 100px;
   text-align: center;
   transition: all .5s ease-in;
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -219,19 +217,11 @@ main #our-service .wrap-btn .btn-cell:hover {
   color: #ffffff;
 }
 
-main #our-service .wrap-cnt {
-  position: relative;
-}
-
-main #our-service .wrap-cnt h2 {
+main #our-service h2 {
   position: absolute;
+  position: relative;
   top: 270px;
-  z-index: 1;
-}
-
-main #our-service .wrap-cnt img {
   margin-right: 165px;
-  margin-top: 100px;
 }
 
 main #gallery {
@@ -254,51 +244,47 @@ main #gallery .gallery-cnt p {
 }
 
 main #gallery .gallery-img {
-  display: grid;
-  grid-template-columns: repeat(21, 75px);
-  grid-template-rows: repeat(15, 75px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 main #gallery .gallery-img img {
-  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+  height: auto;
+  margin-top: 30px;
 }
 
 main #gallery .gallery-img .img1 {
-  grid-column: 2/13;
-  grid-row: 1/8;
-  height: 560px;
+  width: 50%;
 }
 
-main #gallery .gallery-img .img2 {
-  grid-column: 14/21;
-  grid-row: 1/8;
+main #gallery .gallery-img .gallery-img-2 {
+  display: flex;
+  flex-flow: column wrap;
 }
 
-main #gallery .gallery-img .img3 {
-  grid-column: 14/21;
-  grid-row: 5/8;
-  align-self: start;
-  height: 260px;
-  width: 404px;
+main #gallery .gallery-img .gallery-img-3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
-main #gallery .gallery-img .img4 {
-  grid-column: 2/10;
-  grid-row: 9/14;
+main #gallery .gallery-img .gallery-img-3 .img4 {
+  width: 40%;
 }
 
-main #gallery .gallery-img .img5 {
-  z-index: 1;
-  grid-column: 11/21;
-  grid-row: 9/14;
+main #gallery .gallery-img .gallery-img-3 .img5 {
+  width: 40%;
 }
 
 main #gallery .gallery-btn {
   text-align: center;
   padding-bottom: 118px;
   background-color: #ffe92f;
+  margin-top: 50px;
 }
 
 main #gallery .gallery-btn button {
@@ -316,6 +302,7 @@ main #gallery .gallery-btn button:hover {
 main #subscribe-form {
   background-color: #ff6033;
   background-image: url("/img/subscribe-bg.jpg");
+  background-size: cover;
   height: 500px;
 }
 
@@ -349,9 +336,13 @@ main #subscribe-form form {
   padding-top: 0;
 }
 
-main #subscribe-form form #email-form {
+main #subscribe-form form .form-div {
+  width: 45%;
+}
+
+main #subscribe-form form .form-div #email-form {
   box-sizing: border-box;
-  width: 570px;
+  width: 100%;
   height: 50px;
   border-color: #262626;
   margin-left: 165px;
@@ -366,11 +357,9 @@ main #subscribe-form form .btn-form {
   color: #ffffff;
   background-color: #96b92c;
   border: transparent;
-  margin-left: 30px;
+  margin-left: 200px;
   align-self: flex-end;
   font-size: 18px;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   transition: all .5s ease-out;
   cursor: pointeraqq;
@@ -411,8 +400,6 @@ main #blog .blog-img {
 main #blog .blog-img .img-1,
 main #blog .blog-img .img-2,
 main #blog .blog-img .img-3 {
-  -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
   width: 370px;
   height: 328px;
@@ -515,7 +502,6 @@ footer {
   background-image: url("img/contact-bg.jpg");
   margin-top: -60px;
   padding-top: 0;
-  height: 956px;
 }
 
 footer .footer-cnt h2 {
@@ -535,13 +521,18 @@ footer .footer-contact {
   margin-left: 167px;
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-footer .footer-contact input, footer .footer-contact textarea {
+footer .footer-contact form {
+  width: 40%;
+}
+
+footer .footer-contact form input, footer .footer-contact form textarea {
   box-sizing: border-box;
   margin-top: 15px;
-  width: 500px;
+  width: 100%;
   height: 50px;
   background-color: rgba(0, 196, 196, 0.5);
   border: none;
@@ -549,28 +540,50 @@ footer .footer-contact input, footer .footer-contact textarea {
   transition: all .5s;
 }
 
-footer .footer-contact input::placeholder, footer .footer-contact textarea::placeholder {
+footer .footer-contact form input::-webkit-input-placeholder, footer .footer-contact form textarea::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 18px;
 }
 
-footer .footer-contact input:focus, footer .footer-contact textarea:focus {
+footer .footer-contact form input::-moz-placeholder, footer .footer-contact form textarea::-moz-placeholder {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+footer .footer-contact form input:-ms-input-placeholder, footer .footer-contact form textarea:-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+footer .footer-contact form input::-ms-input-placeholder, footer .footer-contact form textarea::-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+footer .footer-contact form input::placeholder, footer .footer-contact form textarea::placeholder {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+footer .footer-contact form input:focus,
+footer .footer-contact form input .active-inp, footer .footer-contact form textarea:focus,
+footer .footer-contact form textarea .active-inp {
   background-color: rgba(0, 131, 131, 0.5);
   border-left: 6px solid #355b82;
 }
 
-footer .footer-contact textarea {
+footer .footer-contact form textarea {
   height: 250px;
   padding-top: 15px;
 }
 
-footer .footer-contact .msg-btn {
+footer .footer-contact form .msg-btn {
   text-align: center;
 }
 
-footer .footer-contact .msg-btn button {
+footer .footer-contact form .msg-btn button {
   height: 50px;
-  width: 50%;
+  width: 200px;
   color: #ffffff;
   background-color: #00c4c4;
   font-size: 18px;
@@ -579,7 +592,7 @@ footer .footer-contact .msg-btn button {
   margin-bottom: 120px;
 }
 
-footer .footer-contact .msg-btn button:hover {
+footer .footer-contact form .msg-btn button:hover {
   background-color: #008383;
 }
 
@@ -596,7 +609,7 @@ footer .footer-contact .adress .head-adress {
 footer .footer-end {
   margin-top: -50px;
   padding-top: 0;
-  height: 90px;
+  min-height: 10vh;
   background-color: #353b48;
   display: flex;
   justify-content: space-around;
@@ -606,4 +619,69 @@ footer .footer-end {
 
 footer .footer-end span {
   color: #ff0000;
+}
+
+@media only screen and (max-width: 800px) {
+  .head-cnt,
+  .about-cnt,
+  .gallery-cnt p,
+  .subscribe-cnt p,
+  .blog-cnt p {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+  }
+  main #about-us {
+    justify-content: center;
+  }
+  main #about-us .about-cnt {
+    margin-left: 10%;
+  }
+  main #our-service .wrap-btn {
+    margin-bottom: 0;
+  }
+  main #our-service h2 {
+    top: 0;
+    left: 10%;
+  }
+  main #subscribe-form .subscribe-cnt h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+  main #subscribe-form .subscribe-cnt p {
+    width: 100%;
+    margin-left: 0;
+  }
+  main #subscribe-form form .btn-form {
+    margin-top: 10px;
+  }
+  footer .footer-contact {
+    margin: 0;
+  }
+  footer .footer-contact .adress {
+    margin-bottom: 50px;
+  }
+  footer .footer-contact form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  footer .footer-contact form .msg-btn button {
+    margin-bottom: 20px;
+  }
+  footer .footer-end {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header .head-cnt {
+    width: 90%;
+    margin-left: 10px;
+  }
+  header .head-cnt button {
+    margin-bottom: 20%;
+  }
+  header .little-mouse {
+    display: none;
+  }
 }

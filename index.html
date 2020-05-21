@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <title>Challenge#2</title>
 </head>
 
-<body>
+<body class = "container">
     <header id="fresh-life">
         <div  class="head">
             
@@ -17,12 +18,12 @@
                     <img class="logo" src="img/logo.png">
                 </div>
                 <ul>
-                    <li class = "li-scroll "><hr class ="hr1 li-hr"><a href="#fresh-life">Home</a></li>
-                    <li class = "li-scroll "><hr class ="hr2"><a href="#about-us">About</a></li>
-                    <li class = "li-scroll "><hr class ="hr3"><a href="#our-service">Services</a></li>
-                    <li class = "li-scroll "><hr class ="hr4"><a href="#gallery">Gallery</a></li>
-                    <li class = "li-scroll "><hr class ="hr5"><a href="#blog">Blog</a></li>
-                    <li class = "li-scroll "><hr class ="hr6"><a href="#contact">Contact</a></li>
+                    <li><hr class ="hr1 li-hr"><a href="#fresh-life">Home</a></li>
+                    <li><hr class ="hr2"><a href="#about-us">About</a></li>
+                    <li><hr class ="hr3"><a href="#our-service">Services</a></li>
+                    <li><hr class ="hr4"><a href="#gallery">Gallery</a></li>
+                    <li><hr class ="hr5"><a href="#blog">Blog</a></li>
+                    <li><hr class ="hr6"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,9 +41,9 @@
     </header>
     <main class="main">
         <article id="about-us">
-            <div class="img-malina">
+            <!-- <div class="img-malina">
                 <img src="img/maliny.png">
-            </div>
+            </div> -->
             <div class="about-cnt">
                 <h2>About Us</h2>
                 <p>
@@ -57,16 +58,17 @@
 
         </article>
         <article id="our-service">
+            
             <div class = "wrap-btn">
                 <div class = "btn-cell"><span class = "btn-txt">Online Shopping</span><span class = "btn-image"><img  src="img/icon/basket.png"></span></div>
                 <div class = "btn-cell"><span class = "btn-txt">Quality Product</span><span class = "btn-image"><img src="img/icon/plant.png"></span></div>
                 <div class = "btn-cell"><span class = "btn-txt">Domestic & International Delivery</span><span class = "btn-image"><img src="img/icon/earth.png"></span></div>
                 <div class = "btn-cell"><span class = "btn-txt">Well Organized</span><span class = "btn-image"><img src="img/icon/carrot.png"></span></div>
             </div>
-            <div class = "wrap-cnt">
-                <h2>Our Services</h2>
-                <img src = "img/tomatoes.png">
-            </div>
+            <h2>Our Services</h2>
+                
+                <!-- <img src = "img/tomatoes.png"> -->
+      
 
         </article>
         <article id="gallery">
@@ -75,11 +77,15 @@
                 <p>Vivamus auctor mattis tellus sit amet blandit. Integer dictum vel lorem vel faucibus. Maecenas a nunc dapibus, auctor sapien ut, ornare felis. Donec lectus dolor, ullamcorper dictum congue vitae, sodales bibendum eros.</p>
             </div>
             <div class = "gallery-img">
-                <img class = "img1" src = "img/gallery/gallery1.jpg">
-                <img class = "img2" src = "img/gallery/gallery2.jpg">
-                <img class = "img3" src = "img/gallery/gallery3.jpg">
-                <img class = "img4" src = "img/gallery/gallery4.jpg">
-                <img class = "img5" src = "img/gallery/gallery5.jpg">
+                <img class = "img1" src = "img/gallery/gallery1.jpg" >
+                <div class = " gallery-img-2">
+                    <img class = "img2" src = "img/gallery/gallery2.jpg" >
+                    <img class = "img3" src = "img/gallery/gallery3.jpg" >
+                </div>
+                <div class = "gallery-img-3">
+                    <img class = "img4" src = "img/gallery/gallery4.jpg" >
+                    <img class = "img5" src = "img/gallery/gallery5.jpg" >
+                </div>
             </div>
             <div class = "gallery-btn">
                 <button type="button">View More</button>
@@ -147,16 +153,16 @@
         <div class = "footer-contact">
             <form>
                 <div class="div-name">
-                    <input type="text" placeholder="Your name..." id ="input-name">
+                    <input type="text" placeholder="Your name..." id ="input-name" class = "text-class">
                 </div>
                 <div type="div-email" class="div-email">
-                    <input type = "email" placeholder= "Your email..." id ="input-email">
+                    <input type = "email" placeholder= "Your email..." id ="input-email" class = "text-class">
                 </div>
                 <div class="div-number">
-                    <input type="number" placeholder="Your phone number..." id ="input-number">
+                    <input type="number" placeholder="Your phone number..." id ="input-number" class = "text-class">
                 </div>
                 <div class = "div-messge">
-                    <textarea type= "text" placeholder="Your messge..."></textarea>
+                    <textarea type= "text" placeholder="Your messge..." class = "text-class"></textarea>
                 </div>
                 <div class = "msg-btn">
                     <button type="submit">Send Messge</button>
@@ -186,6 +192,7 @@
     </footer>
     <script src = "script.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
 </body>
-
 </html>

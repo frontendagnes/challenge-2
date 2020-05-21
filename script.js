@@ -14,6 +14,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //#endregion
 
+// #region input active contact
+// function inputContact (){
+//     let inputActive = document.querySelectorAll(".text-class");
+//     let textValue = inputActive.value;
+//     console.log(textValue)
+//         for (let i = 0; i < inputActive.length; i++){
+//             if (textValue != ''){
+//                 inputActive.classList.add("active-inp")
+//             } else
+//             inputActive.classList.remove("active-inp")
+//         }
+// }
+//  inputContact();
+//#endregion
+
 // #region JQuery animacja menu podczas przewijania
 function activeMenu() {
     const scroll = $(window).scrollTop(); //ustalam pozycję scroola
