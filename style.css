@@ -673,6 +673,21 @@ footer .footer-end span {
   main #our-service .wrap-btn {
     margin-bottom: 0;
   }
+  main #gallery .gallery-img .img1 {
+    width: 90%;
+  }
+  main #gallery .gallery-img .gallery-img-2 .img2 {
+    width: 100%;
+  }
+  main #gallery .gallery-img .gallery-img-2 .img3 {
+    width: 100%;
+  }
+  main #gallery .gallery-img .gallery-img-3 .img4 {
+    width: 90%;
+  }
+  main #gallery .gallery-img .gallery-img-3 .img5 {
+    width: 90%;
+  }
   main #subscribe-form .subscribe-cnt h3 {
     margin-left: 0;
     text-align: center;

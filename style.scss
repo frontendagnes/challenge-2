@@ -634,6 +634,30 @@ main{
 
 
     }
+    #gallery{
+        .gallery-img{
+            .img1{
+                width: 90%;
+            }
+         .gallery-img-2{
+             .img2{
+                 width: 100%;
+             }
+             .img3{
+                 width: 100%;
+             }
+            }
+             .gallery-img-3{
+                 .img4{
+                     width: 90%;
+                 }
+                 .img5{
+                     width: 90%;
+                 }
+             }
+           
+        }
+    }
     #subscribe-form{
         .subscribe-cnt{
             h3{
