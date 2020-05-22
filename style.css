@@ -304,7 +304,7 @@ main #gallery .gallery-btn button:hover {
 
 main #subscribe-form {
   background-color: #ff6033;
-  background-image: url("/img/subscribe-bg.jpg");
+  background-image: url("img/subscribe-bg.jpg");
   background-size: cover;
   height: 500px;
 }
