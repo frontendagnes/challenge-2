@@ -137,7 +137,7 @@ header .little-mouse .mouse {
 header .navbar-fixed-top {
   position: fixed;
   top: 0;
-  height: 70px !important;
+  height: auto !important;
   width: 100%;
   background-color: #f9f8fb;
   z-index: 2;
@@ -170,7 +170,6 @@ main #about-us .about-cnt {
   margin-top: 175px;
   padding-top: 0;
   margin-left: 60%;
-  text-shadow: 2px 2px 4px #000;
   margin-bottom: 235px;
 }
 
@@ -274,7 +273,6 @@ main #gallery .gallery-img .gallery-img-3 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;
 }
 
 main #gallery .gallery-img .gallery-img-3 .img4 {
@@ -505,6 +503,7 @@ main #blog .blog-btn button:hover {
 
 footer {
   background-image: url("img/contact-bg.jpg");
+  background-size: cover;
   margin-top: -60px;
   padding-top: 0;
 }
@@ -618,12 +617,30 @@ footer .footer-end {
   background-color: #353b48;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
   color: #ffffff;
 }
 
 footer .footer-end span {
   color: #ff0000;
+}
+
+@media only screen and (max-width: 1124px) {
+  footer .footer-contact {
+    margin-left: 50px;
+  }
+  footer .footer-contact .adress {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 997px) {
+  main #our-service h2 {
+    top: -20px;
+    left: 10%;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -636,18 +653,25 @@ footer .footer-end span {
     height: 100%;
     text-align: center;
   }
+  header .head-cnt {
+    width: 90%;
+    margin-left: 10px;
+  }
+  header .head-cnt button {
+    margin-bottom: 20%;
+  }
+  header .little-mouse {
+    display: none;
+  }
   main #about-us {
     justify-content: center;
   }
   main #about-us .about-cnt {
     margin-left: 10%;
+    text-shadow: 2px 2px 4px #000;
   }
   main #our-service .wrap-btn {
     margin-bottom: 0;
-  }
-  main #our-service h2 {
-    top: 0;
-    left: 10%;
   }
   main #subscribe-form .subscribe-cnt h3 {
     margin-left: 0;
@@ -664,14 +688,14 @@ footer .footer-end span {
     margin: 0;
   }
   footer .footer-contact .adress {
-    margin-bottom: 50px;
+    margin-top: 50px !important;
   }
   footer .footer-contact form {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 60px auto;
   }
   footer .footer-contact form .msg-btn button {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   footer .footer-end {
     padding-bottom: 0;
@@ -679,14 +703,28 @@ footer .footer-end span {
 }
 
 @media only screen and (max-width: 500px) {
-  header .head-cnt {
-    width: 90%;
-    margin-left: 10px;
+  main #our-service .wrap-btn .btn-cell {
+    width: 300px;
+    height: 70px;
   }
-  header .head-cnt button {
-    margin-bottom: 20%;
+  main #our-service h2 {
+    font-size: 50px !important;
   }
-  header .little-mouse {
-    display: none;
+  main #subscribe-form form .form-div {
+    width: 80%;
+  }
+  main #subscribe-form form .form-div input {
+    margin-left: 30px !important;
+  }
+  footer .footer-contact {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-contact form {
+    width: 80%;
+  }
+  footer .footer-contact .adress {
+    margin-bottom: 50px;
+    text-align: center;
   }
 }
