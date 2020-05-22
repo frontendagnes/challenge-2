@@ -29,29 +29,34 @@ header {
   background-color: #f9f8fb;
   background-image: url(img/strawberry-background.jpg);
   background-size: cover;
-  background-attachment: fixed;
 }
 
-header .head {
+header .wrap-head {
+  height: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+header .wrap-head .head {
   height: 150px;
 }
 
-header .head .nav-top {
+header .wrap-head .head .nav-top {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 
-header .head .nav-top .div-logo {
+header .wrap-head .head .nav-top .div-logo {
   margin-top: 50px;
 }
 
-header .head .nav-top ul {
+header .wrap-head .head .nav-top ul {
   list-style-type: none;
   margin-top: 50px;
 }
 
-header .head .nav-top ul li {
+header .wrap-head .head .nav-top ul li {
   box-sizing: border-box;
   padding-top: 8px;
   display: inline-block;
@@ -59,7 +64,7 @@ header .head .nav-top ul li {
   text-align: center;
 }
 
-header .head .nav-top ul li a {
+header .wrap-head .head .nav-top ul li a {
   display: inline-block;
   width: 100%;
   text-decoration: none;
@@ -68,7 +73,7 @@ header .head .nav-top ul li a {
   font-weight: 600;
 }
 
-header .head .nav-top ul li hr {
+header .wrap-head .head .nav-top ul li hr {
   height: 3px;
   background-color: #ff6033;
   margin-bottom: 5px;
@@ -80,39 +85,17 @@ header .head .nav-top ul li hr {
   transform-origin: 0 50%;
 }
 
-header .head .nav-top ul li:hover hr,
-header .head .nav-top ul .li-hr {
+header .wrap-head .head .nav-top ul li:hover hr,
+header .wrap-head .head .nav-top ul .li-hr {
   visibility: visible;
   transform: scaleX(1);
   color: red;
 }
 
-header .navbar-fixed-top {
-  position: fixed;
-  top: 0;
-  height: 70px;
-  width: 100%;
-  background-color: #f9f8fb;
-  z-index: 2;
-  transition: all .5s linear;
-  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
-}
-
-header .navbar-fixed-top .nav-top ul {
-  margin-top: 5px;
-  transition: all .5s linear;
-}
-
-header .navbar-fixed-top .nav-top .div-logo {
-  margin-top: 5px;
-  margin-right: 50px;
-  transition: all .5s linear;
-}
-
 header .head-cnt {
   width: 385px;
   margin-left: 165px;
-  padding-top: 215px;
+  margin-top: 215px;
 }
 
 header .head-cnt h1 {
@@ -149,6 +132,28 @@ header .little-mouse {
 header .little-mouse .mouse {
   position: relative;
   bottom: 70px;
+}
+
+header .navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  height: 70px !important;
+  width: 100%;
+  background-color: #f9f8fb;
+  z-index: 2;
+  transition: all .5s linear;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+header .navbar-fixed-top .nav-top ul {
+  margin-top: 5px !important;
+  transition: all .5s linear;
+}
+
+header .navbar-fixed-top .nav-top .div-logo {
+  margin-top: 5px !important;
+  margin-right: 50px;
+  transition: all .5s linear;
 }
 
 main #about-us {

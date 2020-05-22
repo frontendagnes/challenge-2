@@ -31,7 +31,11 @@ header {
     background-color: #f9f8fb;
     background-image: url(img/strawberry-background.jpg);
     background-size: cover; 
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    .wrap-head{
+        height: 150px;
+        margin: 0;
+        padding: 0;
     
     .head {
         height: 150px;
@@ -88,37 +92,12 @@ header {
             }
         }
         
-
     }
-    .navbar-fixed-top{
-        position: fixed;
-        top:0;
-        height: 70px;
-        width: 100%;
-        background-color: #f9f8fb;  
-        z-index: 2;
-        transition: all .5s linear;
-        box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
-        .nav-top {             
-            ul {
-                margin-top: 5px;
-                transition: all .5s linear;
-            
-            }
-            .div-logo {
-                margin-top: 5px;
-                margin-right: 50px;
-                transition: all .5s linear;
-            }
-        }
-    
     }
-
-
     .head-cnt {
         width: 385px;
         margin-left: 165px;
-        padding-top: 215px;
+        margin-top: 215px;
 
         h1 {
             font-size: 45px;
@@ -154,6 +133,31 @@ header {
             bottom: 70px;
         }
     }
+
+    .navbar-fixed-top{
+        position: fixed;
+        top:0;
+        height: 70px !important;
+        width: 100%;
+        background-color: #f9f8fb;  
+        z-index: 2;
+        transition: all .5s linear;
+        box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
+        .nav-top {             
+            ul {
+                margin-top: 5px !important;
+                transition: all .5s linear;
+            
+            }
+            .div-logo {
+                margin-top: 5px !important;
+                margin-right: 50px;
+                transition: all .5s linear;
+            }
+        }
+    
+    }
+
 }
 
 main {
@@ -250,9 +254,6 @@ main {
             flex-flow: row wrap;
             justify-content: space-around;
             align-items: center;
-            // display: grid;
-            // grid-template-columns: repeat(21, 1fr);
-            // grid-template-rows: repeat(15, 1fr);
             img{
                 box-shadow: 10px 10px 15px 0px rgba(0,0,0,0.75);
                 height: auto;
@@ -260,11 +261,6 @@ main {
             }
             .img1{
                   width: 50% ; 
-                  
-                // grid-column: 2/13;
-                // grid-row: 1/8;
-                // height: 560px;
-
             }
             .gallery-img-2{
                 display: flex;
