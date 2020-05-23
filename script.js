@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-//#region  przyklejenie menu  
+    //#region  przyklejenie menu             
     let head = document.querySelector(".head");
+
     function scroll() {
         if (window.scrollY > 50) {
             head.classList.add("navbar-fixed-top")
@@ -12,59 +13,60 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener("scroll", scroll);
 
 
-//#endregion
+    //#endregion
 
-// #region input active contact
-// function inputContact (){
-//     let inputActive = document.querySelectorAll(".text-class");
-//     let textValue = inputActive.value;
-//     console.log(textValue)
-//         for (let i = 0; i < inputActive.length; i++){
-//             if (textValue != ''){
-//                 inputActive.classList.add("active-inp")
-//             } else
-//             inputActive.classList.remove("active-inp")
-//         }
-// }
-//  inputContact();
-//#endregion
+    // #region input active contact
+    let input = document.querySelectorAll(".text-class");
 
-// #region JQuery animacja menu podczas przewijania
-function activeMenu() {
-    const scroll = $(window).scrollTop(); //ustalam pozycję scroola
+    for (let i = 0; i < input.length; i++) {
+        input[i].addEventListener("blur", function (e) {
+            e.preventDefault();
+            if (input[i].value !== "") {
+                input[i].classList.add("active-inp")
+            } else
+                input[i].classList.remove("active-inp")
+        })
 
-    //ustalam w którym miejscu zczyna się każdy article
-    const aboutUs = $("#about-us").offset().top;
-    const ourService = $("#our-service").offset().top;
-    const gallery = $("#gallery").offset().top;
-    const blog = $("#blog").offset().top;
-    const contact = $("#contact").offset().top;
-
-    // sprawdzam czy pozycja scroll osiągneła pozycje danego article i w zalezności dodaje lub usuwam klasę z aniamcją
-    if (scroll < aboutUs -150) {
-        $("nav li hr").not(".hr1").removeClass("li-hr");
-        $(".hr1").addClass("li-hr");
-    } else if (scroll < ourService - 150) {
-        $("nav li hr").not(".hr2").removeClass("li-hr");
-        $(".hr2").addClass("li-hr");
-    } else if (scroll < gallery - 150){
-        $("nav li hr").not(".hr3").removeClass("li-hr");
-        $(".hr3").addClass("li-hr");
-    } else if (scroll < blog - 150){
-        $("nav li hr").not(".hr4").removeClass("li-hr");
-        $(".hr4").addClass("li-hr");
-    }  else if (scroll < contact - 150){
-        $("nav li hr").not(".hr5").removeClass("li-hr");
-        $(".hr5").addClass("li-hr");
-    }  
-    else {
-        $("nav li hr").not(".hr6").removeClass("li-hr");
-        $(".hr6").addClass("li-hr");
     }
-}
-// dodaje nasłuch na scroll podczas przewijania okna i wywołuję funkcję JQuery
-$(window).on("scroll", activeMenu);
 
-//#endregion
+
+    //#endregion
+
+    // #region JQuery animacja menu podczas przewijania
+    function activeMenu() {
+        const scroll = $(window).scrollTop(); //ustalam pozycję scroola
+
+        //ustalam w którym miejscu zczyna się każdy article
+        const aboutUs = $("#about-us").offset().top;
+        const ourService = $("#our-service").offset().top;
+        const gallery = $("#gallery").offset().top;
+        const blog = $("#blog").offset().top;
+        const contact = $("#contact").offset().top;
+
+        // sprawdzam czy pozycja scroll osiągneła pozycje danego article i w zalezności dodaje lub usuwam klasę z aniamcją
+        if (scroll < aboutUs - 150) {
+            $("nav li hr").not(".hr1").removeClass("li-hr");
+            $(".hr1").addClass("li-hr");
+        } else if (scroll < ourService - 150) {
+            $("nav li hr").not(".hr2").removeClass("li-hr");
+            $(".hr2").addClass("li-hr");
+        } else if (scroll < gallery - 150) {
+            $("nav li hr").not(".hr3").removeClass("li-hr");
+            $(".hr3").addClass("li-hr");
+        } else if (scroll < blog - 150) {
+            $("nav li hr").not(".hr4").removeClass("li-hr");
+            $(".hr4").addClass("li-hr");
+        } else if (scroll < contact - 150) {
+            $("nav li hr").not(".hr5").removeClass("li-hr");
+            $(".hr5").addClass("li-hr");
+        } else {
+            $("nav li hr").not(".hr6").removeClass("li-hr");
+            $(".hr6").addClass("li-hr");
+        }
+    }
+    // dodaje nasłuch na scroll podczas przewijania okna i wywołuję funkcję JQuery
+    $(window).on("scroll", activeMenu);
+
+    //#endregion
 
 })

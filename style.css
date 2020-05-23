@@ -8,8 +8,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.active-inp {
+  background-color: rgba(0, 131, 131, 0.5) !important;
+  border-left: 6px solid #355b82 !important;
+}
+
 h2 {
-  color: white;
+  color: #ffffff;
   font-size: 70px !important;
   font-weight: 600 !important;
   margin-bottom: 0 !important;
@@ -533,7 +538,8 @@ footer .footer-contact form {
   width: 40%;
 }
 
-footer .footer-contact form input, footer .footer-contact form textarea {
+footer .footer-contact form input,
+footer .footer-contact form textarea {
   box-sizing: border-box;
   margin-top: 15px;
   width: 100%;
@@ -541,37 +547,42 @@ footer .footer-contact form input, footer .footer-contact form textarea {
   background-color: rgba(0, 196, 196, 0.5);
   border: none;
   padding-left: 18px;
+  color: #ffffff;
   transition: all .5s;
 }
 
-footer .footer-contact form input::-webkit-input-placeholder, footer .footer-contact form textarea::-webkit-input-placeholder {
+footer .footer-contact form input::-webkit-input-placeholder,
+footer .footer-contact form textarea::-webkit-input-placeholder {
   color: #ffffff;
   font-size: 18px;
 }
 
-footer .footer-contact form input::-moz-placeholder, footer .footer-contact form textarea::-moz-placeholder {
+footer .footer-contact form input::-moz-placeholder,
+footer .footer-contact form textarea::-moz-placeholder {
   color: #ffffff;
   font-size: 18px;
 }
 
-footer .footer-contact form input:-ms-input-placeholder, footer .footer-contact form textarea:-ms-input-placeholder {
+footer .footer-contact form input:-ms-input-placeholder,
+footer .footer-contact form textarea:-ms-input-placeholder {
   color: #ffffff;
   font-size: 18px;
 }
 
-footer .footer-contact form input::-ms-input-placeholder, footer .footer-contact form textarea::-ms-input-placeholder {
+footer .footer-contact form input::-ms-input-placeholder,
+footer .footer-contact form textarea::-ms-input-placeholder {
   color: #ffffff;
   font-size: 18px;
 }
 
-footer .footer-contact form input::placeholder, footer .footer-contact form textarea::placeholder {
+footer .footer-contact form input::placeholder,
+footer .footer-contact form textarea::placeholder {
   color: #ffffff;
   font-size: 18px;
 }
 
 footer .footer-contact form input:focus,
-footer .footer-contact form input .active-inp, footer .footer-contact form textarea:focus,
-footer .footer-contact form textarea .active-inp {
+footer .footer-contact form textarea:focus {
   background-color: rgba(0, 131, 131, 0.5);
   border-left: 6px solid #355b82;
 }
@@ -630,6 +641,7 @@ footer .footer-end span {
   footer .footer-contact {
     margin-left: 50px;
   }
+
   footer .footer-contact .adress {
     margin-right: 50px;
   }
@@ -644,6 +656,7 @@ footer .footer-end span {
 }
 
 @media only screen and (max-width: 800px) {
+
   .head-cnt,
   .about-cnt,
   .gallery-cnt p,
@@ -653,66 +666,85 @@ footer .footer-end span {
     height: 100%;
     text-align: center;
   }
+
   header .head-cnt {
     width: 90%;
     margin-left: 10px;
   }
+
   header .head-cnt button {
     margin-bottom: 20%;
   }
+
   header .little-mouse {
     display: none;
   }
+
   main #about-us {
     justify-content: center;
   }
+
   main #about-us .about-cnt {
     margin-left: 10%;
     margin-right: 5%;
     text-shadow: 2px 2px 4px #000;
   }
+
   main #our-service .wrap-btn {
     margin-bottom: 0;
   }
+
   main #gallery .gallery-img .img1 {
     width: 90%;
   }
+
   main #gallery .gallery-img .gallery-img-2 .img2 {
     width: 90%;
   }
+
   main #gallery .gallery-img .gallery-img-2 .img3 {
     width: 90%;
   }
+
   main #gallery .gallery-img .gallery-img-3 .img4 {
     width: 90%;
   }
+
   main #gallery .gallery-img .gallery-img-3 .img5 {
     width: 90%;
   }
+
   main #subscribe-form .subscribe-cnt h3 {
     margin-left: 0;
     text-align: center;
   }
+
   main #subscribe-form .subscribe-cnt p {
     width: 100%;
     margin-left: 0;
   }
+
   main #subscribe-form form .btn-form {
     margin-top: 10px;
   }
+
   footer .footer-contact {
     margin: 0;
   }
+
   footer .footer-contact .adress {
     margin-top: 50px !important;
   }
+
   footer .footer-contact form {
     max-width: 100%;
     margin: 60px auto;
   }
+
   footer .footer-contact form .msg-btn button {
     margin-bottom: 10px;
   }
+
   footer .footer-end {
     padding-bottom: 0;
   }
@@ -723,19 +755,24 @@ footer .footer-end span {
     width: 300px;
     height: 70px;
   }
+
   main #our-service h2 {
     font-size: 50px !important;
   }
+
   main #subscribe-form form .form-div {
     width: 80%;
   }
+
   main #subscribe-form form .form-div input {
     margin-left: 30px !important;
   }
+
   main #subscribe-form form .btn-form {
     margin-top: 10px;
     margin-left: 20%;
   }
+
   main #blog .blog-img .img-1,
   main #blog .blog-img .img-2,
   main #blog .blog-img .img-3 {
@@ -743,18 +780,22 @@ footer .footer-end span {
     width: 355px;
     margin-bottom: 10px;
   }
+
   footer .footer-cnt {
     text-align: center;
     margin-left: 5px;
     margin-right: 5px;
   }
+
   footer .footer-contact {
     display: flex;
     justify-content: center;
   }
+
   footer .footer-contact form {
     width: 80%;
   }
+
   footer .footer-contact .adress {
     margin-bottom: 50px;
     padding-top: 0;
