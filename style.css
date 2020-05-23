@@ -267,6 +267,7 @@ main #gallery .gallery-img .img1 {
 main #gallery .gallery-img .gallery-img-2 {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
 }
 
 main #gallery .gallery-img .gallery-img-3 {
@@ -303,7 +304,6 @@ main #gallery .gallery-btn button:hover {
 }
 
 main #subscribe-form {
-  background-color: #ff6033;
   background-image: url("img/subscribe-bg.jpg");
   background-size: cover;
   height: 500px;
@@ -668,6 +668,7 @@ footer .footer-end span {
   }
   main #about-us .about-cnt {
     margin-left: 10%;
+    margin-right: 5%;
     text-shadow: 2px 2px 4px #000;
   }
   main #our-service .wrap-btn {
@@ -677,10 +678,10 @@ footer .footer-end span {
     width: 90%;
   }
   main #gallery .gallery-img .gallery-img-2 .img2 {
-    width: 100%;
+    width: 90%;
   }
   main #gallery .gallery-img .gallery-img-2 .img3 {
-    width: 100%;
+    width: 90%;
   }
   main #gallery .gallery-img .gallery-img-3 .img4 {
     width: 90%;
@@ -731,6 +732,22 @@ footer .footer-end span {
   main #subscribe-form form .form-div input {
     margin-left: 30px !important;
   }
+  main #subscribe-form form .btn-form {
+    margin-top: 10px;
+    margin-left: 20%;
+  }
+  main #blog .blog-img .img-1,
+  main #blog .blog-img .img-2,
+  main #blog .blog-img .img-3 {
+    margin-left: 0;
+    width: 355px;
+    margin-bottom: 10px;
+  }
+  footer .footer-cnt {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   footer .footer-contact {
     display: flex;
     justify-content: center;
@@ -740,6 +757,8 @@ footer .footer-end span {
   }
   footer .footer-contact .adress {
     margin-bottom: 50px;
+    padding-top: 0;
+    margin-top: 0;
     text-align: center;
   }
 }

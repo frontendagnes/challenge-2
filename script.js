@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //#region  przyklejenie menu  
     let head = document.querySelector(".head");
     function scroll() {
-        if (window.scrollY > 150) {
+        if (window.scrollY > 50) {
             head.classList.add("navbar-fixed-top")
         } else
             head.classList.remove("navbar-fixed-top")

@@ -254,11 +254,13 @@ main {
             .gallery-img-2{
                 display: flex;
                 flex-flow: column wrap;
+                align-items: center;
         }
         .gallery-img-3{
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
+           
             .img4{
               width: 40%;
             }
@@ -285,7 +287,6 @@ main {
         }
     }
     #subscribe-form{
-        background-color: #ff6033;
         background-image: url("img/subscribe-bg.jpg");
         background-size: cover;
         height: 500px;
@@ -624,6 +625,7 @@ main{
         justify-content: center;
     .about-cnt{
         margin-left:10%;
+        margin-right: 5%;
         text-shadow: 2px 2px 4px #000;
     }
 }
@@ -641,13 +643,14 @@ main{
             }
          .gallery-img-2{
              .img2{
-                 width: 100%;
+                 width: 90%;
              }
              .img3{
-                 width: 100%;
+                 width: 90%;
              }
             }
              .gallery-img-3{
+                 
                  .img4{
                      width: 90%;
                  }
@@ -730,11 +733,32 @@ main{
                         margin-left: 30px !important;
                     }
                 }
+                .btn-form{
+                    margin-top:10px;
+                    margin-left:20%;
+                }
+            }
+        }
+
+        #blog{
+            .blog-img{
+                .img-1,
+                .img-2,
+                .img-3{
+                    margin-left: 0;
+                    width: 355px;
+                    margin-bottom: 10px;
+                }
             }
         }
 
     }
     footer{
+        .footer-cnt{
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
         .footer-contact{
             display: flex;
             justify-content: center;
@@ -743,8 +767,9 @@ main{
             }
             .adress{
                 margin-bottom: 50px;
+                padding-top: 0;
+                margin-top: 0;
                 text-align: center;
-
             }
         }
     }
