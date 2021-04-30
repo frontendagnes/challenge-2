@@ -5,3 +5,5 @@ Pomysł na projekt zaczerpnięty z grupy FB - Weekly Webdev Challenge - #chellen
 Strona została wykonana w technologi HTML + CSS + JS z elementami JQuery (animacja przewijanego menu).
 
 Kod CSS został napisany z użyciem SCSS.
+
+Live: https://zabula81.github.io/challenge-2/
